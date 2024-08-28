@@ -2,6 +2,9 @@
 
 int main()
 {
-    std::cout<<"Hello World!";
+    if(1==1)
+    {
+        std::cout<<"Hello World!";
+    }
     return 0;
 }
