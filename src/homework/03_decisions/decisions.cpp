@@ -36,7 +36,7 @@ std::string get_letter_grade_using_switch(int grade)
     switch (grade)
     {
     case 90 ... 100:
-        letter = "a";
+        letter = "A";
         break;
     case 80 ... 89:
         letter = "B";
