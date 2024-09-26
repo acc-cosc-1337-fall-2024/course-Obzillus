@@ -41,7 +41,7 @@ int main()
 		int input = 0;
 		cout<<"Input number: ";
 		//prompts the user until a valid nubmer is inputed
-		while(!(cin>>input)){
+		while(!(cin>>input)||input<=0){
 			handle_invalid_input();
 			continue;
 		}
@@ -54,7 +54,7 @@ int main()
 			int input2;
 			cout<<"Input secend number: ";
 			//prompts the user until a valid nubmer is inputed
-			while(!(cin>>input2))
+			while(!(cin>>input2)||input2<=0)
 			{
 				handle_invalid_input();
 			}
