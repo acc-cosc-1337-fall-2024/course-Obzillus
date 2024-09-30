@@ -37,13 +37,12 @@ int main()
 			else continue;
 		}
 
-		//if the input is 1 or 2 then prompt user for a number
+		//at this point the number shoudl be 1 or 2, so we then prompt user for a number
 		int input = 0;
 		cout<<"Input number: ";
 		//prompts the user until a valid nubmer is inputed
 		while(!(cin>>input)||input<=0){
 			handle_invalid_input();
-			continue;
 		}
 
 		if(menu_input == 1){
@@ -62,7 +61,7 @@ int main()
 			cout<<"gcd of "<<input<< " and "<<input2<<" is "<<gcd(input, input2)<<"\n";
 		}
 
-	} while(menu_input != -1);
+	} while(true);
 
 	return 0;
 }
