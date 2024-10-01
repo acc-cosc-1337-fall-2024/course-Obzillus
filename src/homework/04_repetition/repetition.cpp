@@ -31,3 +31,10 @@ int gcd(int num1, int num2)
     }
     return num1;
 }
+
+void handle_invalid_input()
+{
+	std::cin.clear();
+	std::cin.ignore(99999,'\n');
+	std::cout<<"Please input valid number \n";
+}
