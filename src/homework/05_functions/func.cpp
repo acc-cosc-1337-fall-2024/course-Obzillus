@@ -14,20 +14,11 @@ string get_dna_complement(string dna)
 {
     for (auto i = 0; i < dna.length(); i++)
     {
-<<<<<<< Updated upstream
         if(dna[i] = 'C') dna[i] = 'G';
         if(dna[i] = 'G') dna[i] = 'C';
 
         if(dna[i] = 'A') dna[i] = 'T';
         if(dna[i] = 'T') dna[i] = 'A';
     }
-=======
-        if(dna[i] == 'C') dna[i] = 'G';
-        if(dna[i] == 'G') dna[i] = 'C';
-
-        if(dna[i] == 'A') dna[i] = 'T';
-        if(dna[i] == 'T') dna[i] = 'A';
-    }
     return dna;
->>>>>>> Stashed changes
 }
