@@ -10,8 +10,8 @@ int main()
 {
 	int menu_input;	
 
-	do {
-
+	do {	
+		
 		//prompt user for menu input
 		cout
 		<<"1-Factorial \n"
