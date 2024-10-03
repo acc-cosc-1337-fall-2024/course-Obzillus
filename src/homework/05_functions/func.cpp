@@ -22,3 +22,12 @@ string get_dna_complement(string dna)
     }
     return dna;
 }
+string reverse_string(string dna)
+{
+    string reversed = "";
+    for (int i = dna.length(); i >= 0; i--)
+    {
+        reversed += dna[i];
+    }
+    return reversed;
+}
