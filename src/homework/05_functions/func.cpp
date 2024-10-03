@@ -12,13 +12,13 @@ double get_gc_content(const string& dna)
 }
 string get_dna_complement(string dna)
 {
+    dna = reverse_string(dna);
     for (auto i = 0; i < dna.length(); i++)
     {
-        if(dna[i] = 'C') dna[i] = 'G';
-        if(dna[i] = 'G') dna[i] = 'C';
-
-        if(dna[i] = 'A') dna[i] = 'T';
-        if(dna[i] = 'T') dna[i] = 'A';
+        if(dna[i] == 'C') dna[i] = 'G';
+        else if(dna[i] == 'G') dna[i] = 'C';
+        else if(dna[i] == 'A') dna[i] = 'T';
+        else if(dna[i] == 'T') dna[i] = 'A';
     }
     return dna;
 }

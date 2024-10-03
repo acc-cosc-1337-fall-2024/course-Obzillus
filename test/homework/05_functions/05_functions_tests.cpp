@@ -11,11 +11,11 @@ TEST_CASE("Verify get_gc_content Function", "verification") {
 	REQUIRE(get_gc_content("CGCTATAG") == .50);
 }
 TEST_CASE("Verify get_dna_complement Function", "verification") {
-	REQUIRE(get_dna_complement("AAAACCCGGT") == "ACCGGGTTTT");
-	REQUIRE(get_dna_complement("CCCGGAAAAT") == "ATTTTCCGGG");
+	REQUIRE(get_dna_complement("AAAACCCGGT").compare("ACCGGGTTTT"));
+	REQUIRE(get_dna_complement("CCCGGAAAAT").compare("ATTTTCCGGG"));
 }
 TEST_CASE("Verify reverse_string Function", "verification") {
-	REQUIRE(reverse_string("AGCTATAG") == "GATATCGA");
-	REQUIRE(reverse_string("CGCTATAG") == "GATATCGC");
+	REQUIRE(reverse_string("AGCTATAG").compare("GATATCGA"));
+	REQUIRE(reverse_string("CGCTATAG").compare("GATATCGC"));
 }
 
