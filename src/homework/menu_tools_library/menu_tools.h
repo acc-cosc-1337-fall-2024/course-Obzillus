@@ -3,7 +3,7 @@
 #include <list>
 
 using std::string;
-using std::cout, std::cin, std::getline;
+using std::cout, std::cin;
 using std::list;
 
 void handle_invalid_input();
