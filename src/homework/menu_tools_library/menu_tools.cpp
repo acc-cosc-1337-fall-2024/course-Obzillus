@@ -25,11 +25,7 @@ int get_menu_input(list<string> options){
 		<<num_option+1<<"-Exit \n"
 		<<"Input option: ";
 	
-		//re-prompt user if invalid number is given
-		if(!(cin>>menu_input) || menu_input <= 0 || menu_input >= num_option+2) {
-			handle_invalid_input();
-			continue;
-		}
+		menu_input = get_int_input(0,num_option+2);
 
 		//asks for confirmation if exit number is inputed
  		if(menu_input == num_option+1){
