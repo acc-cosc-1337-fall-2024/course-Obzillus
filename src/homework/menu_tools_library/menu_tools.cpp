@@ -52,7 +52,7 @@ int get_int_input(string msg, int min, int max){
 	int input;
 	cout<<msg;
 	//prompts the user until a valid number is inputed
-	while(!(cin>>input)||input <= min||input >= max)
+	while(!(cin>>input)||input < min||input > max)
 	{
 		handle_invalid_input();
 	}
