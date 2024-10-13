@@ -48,11 +48,12 @@ int get_menu_input(list<string> options){
 	return -1;
 }
 
-int get_int_input(string msg, int min, int max){
+int get_int_input(string msg, optional<int> min, optional<int> max){
+
 	int input;
 	cout<<msg;
 	//prompts the user until a valid number is inputed
-	while(!(cin>>input)||input < min||input > max)
+	while(!(cin>>input)||input < min.value_or(-2147483647)||input > max.value_or(2147483647))
 	{
 		handle_invalid_input();
 	}
