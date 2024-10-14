@@ -7,7 +7,7 @@ void handle_invalid_input()
 	cout<<"Please enter valid input \n";
 }
 
-int get_menu_input(list<string> options){
+int get_menu_input(vector<string> options){
 
 	int menu_input;	
 	int num_option = options.size();

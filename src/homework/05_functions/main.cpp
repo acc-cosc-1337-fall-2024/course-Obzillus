@@ -4,7 +4,7 @@
 int main() 
 {
 	int menu_input;
-	list<string> options = {"Get GC Content", "Get DNA Complement"};
+	vector<string> options = {"Get GC Content", "Get DNA Complement"};
 	do
 	{		
 	 	menu_input = get_menu_input(options);
