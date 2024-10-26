@@ -16,7 +16,7 @@ void TicTacToe::mark_board(int position)
     set_next_player();
 }
 
-void const TicTacToe::display_board() const
+void TicTacToe::display_board() const
 {
     for (int i = 0; i < 3; i++)
     {
@@ -30,9 +30,17 @@ void const TicTacToe::display_board() const
 
 bool TicTacToe::check_board_full()
 {
-    for (int i = 0; i < pegs.size()-1; i++)
+    for (int i = 0; i < pegs.size(); i++)
     {
         if(pegs[i] == " ") return false;
     }
     return true;
+}
+
+void TicTacToe::clear_board()
+{
+    for (int i = 0; i < pegs.size(); i++)
+    {
+        pegs[i] = " ";
+    }
 }
