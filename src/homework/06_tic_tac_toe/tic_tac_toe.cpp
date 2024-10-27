@@ -18,13 +18,9 @@ void TicTacToe::mark_board(int position)
 
 void TicTacToe::display_board() const
 {
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < pegs.size()-1; i+=3)
     {
-        for (int j = 0; j < 3; j++)
-        {
-            cout<<pegs[i+j]<<"|";
-        }
-        cout<<"\n |";
+        cout<<pegs[i]<<"|"<<pegs[i+1]<<"|"<<pegs[i+2]<<"\n";
     }
 }
 
